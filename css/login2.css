@@ -1,0 +1,395 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; /* Allow scrolling only if needed */
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+  font-family: inherit;
+}
+
+.input-email,
+.input-password {
+  flex: 1 1 auto;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+.input-email::placeholder,
+.input-password::placeholder {
+  color: #a6a6a6;
+}
+
+/* checkbox (remember-me) */
+.checkbox {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  accent-color: #004080;
+  cursor: pointer;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Dynamic height to fit viewport */
+  height: auto; /* Allow content to dictate height */
+  margin: 0 auto;
+  background: linear-gradient(225.03deg, rgba(0, 0, 0, 0.9), #004080);
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group {
+  position: absolute;
+  width: 116.11%;
+  height: 157.03%;
+  top: -20.9%;
+  left: -7.36%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/Rda9gBrMNK.png)
+    no-repeat center;
+  background-size: cover; /* Maintain aspect ratio */
+  z-index: 0;
+}
+
+.flex-column-faa {
+  position: absolute;
+  width: 424px;
+  height: auto; /* Allow dynamic height */
+  top: 60px; /* Pull text up */
+  left: 121px;
+  z-index: 17;
+}
+
+.logo {
+  position: relative;
+  width: 268px;
+  height: 53.652px;
+  margin: 0;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.group-1 {
+  position: relative;
+  width: 264.371px;
+  height: 50.021px;
+  margin: 1.825px 0 0 1.565px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/f6S8sT9eXW.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 16;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 24px;
+  position: relative;
+  width: 424px;
+  margin: 196.348px 0 0 0;
+  z-index: 17;
+}
+
+.login-account {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 424px;
+  min-width: 0;
+  height: 128px;
+  color: #ffffff;
+  font-family: Posterama2001W01-Bold, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 63.984px;
+  text-align: left;
+  letter-spacing: -0.11px;
+  z-index: 18;
+}
+
+.enter-email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 424px;
+  min-width: 0;
+  height: 60px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: -0.06px;
+  opacity: 0.8;
+  z-index: 19;
+}
+
+.bg {
+  position: absolute;
+  width: 43%;
+  height: 57.25%; /* Restore original height */
+  min-height: 569px; /* Ensure sufficient height */
+  top: 60px; /* Align with .flex-column-faa */
+  left: 47.01%;
+  font-size: 0px;
+  background: #ffffff;
+  border: 0.3px solid #b8b8b8;
+  z-index: 2;
+  border-radius: 24px;
+}
+
+/* Centre the form inside .bg */
+.login-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%); /* Revert to original for proper centering */
+  width: 90%;
+  max-width: 516px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: stretch;
+  min-height: 400px; /* Ensure .bg expands */
+}
+
+/* Remove the hard-coded 64px indent from AI export */
+.login-form > * {
+  margin-left: 0 !important;
+}
+
+.email-address {
+  display: block;
+  position: relative;
+  height: 27px;
+  margin: 120px 0 0 64px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  opacity: 0.8;
+  z-index: 12;
+}
+
+.frame-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 516px;
+  height: 56px;
+  margin-left: 64px;
+  padding: 13px 16px;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+}
+
+.esteban-schiller {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #a6a6a6;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  z-index: 14;
+}
+
+.flex-row-eb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 516px;
+  height: 27px;
+  margin: 40.3px 0 0 64px;
+  z-index: 8;
+}
+
+.password {
+  flex-shrink: 0;
+  position: relative;
+  height: 27px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  opacity: 0.8;
+  z-index: 7;
+}
+
+.forget-password {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  position: relative;
+  width: 158px;
+  height: 27px;
+  color: #007fff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: right;
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  opacity: 0.6;
+  z-index: 8;
+}
+
+.frame-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 516px;
+  height: 56px;
+  margin-left: 64px;
+  padding: 13px 16px;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+}
+
+.password-4 {
+  flex-shrink: 0;
+  position: relative;
+  width: 164px;
+  height: 14px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/XYL5kXq7bF.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+}
+
+.frame-5 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  position: relative;
+  width: 227px;
+  margin: 24.3px 0 0 64px;
+  z-index: 9;
+}
+
+.check {
+  flex-shrink: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/gfvJ8PvFPx.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+
+.remember-password {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 27px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: -0.06px;
+  opacity: 0.6;
+  z-index: 11;
+}
+
+.frame-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 516px;
+  height: 56px;
+  margin: 40.3px 0 0 64px;
+  padding: 0;
+  background: linear-gradient(90deg, #004080, #007fff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity .2s ease;
+}
+
+.frame-6:hover {
+  opacity: 0.9;
+}
+
+.sign-in {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  width: 65px;
+  height: 27px;
+  color: #ffffff;
+  font-family: Posterama2001W01-Bold, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.66px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: -0.07px;
+  z-index: 4;
+}
