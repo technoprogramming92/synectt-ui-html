@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synectt | Login</title>
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Posterama2001W01-Bold:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
+
+    <!-- page styles -->
+    <link rel="stylesheet" href="/css/login.css" />
+    <!-- Add the responsive styles -->
+    <link rel="stylesheet" href="/css/responsive_login.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- decorative blurred background -->
+      <div class="group"></div>
+
+      <!-- left-hand copy -->
+      <div class="flex-column-faa">
+        <div class="logo"><div class="group-1"></div></div>
+
+        <div class="frame">
+          <span class="login-account">Login into your Account</span>
+          <span class="enter-email">Please enter your email and password to continue!</span>
+        </div>
+      </div>
+
+      <!-- *** interactive form *** -->
+      <div class="bg">
+        <form class="login-form" action="#" method="post" autocomplete="off">
+          <!-- e-mail -->
+          <label class="email-address" for="email">Email address:</label>
+          <div class="frame-2">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="input-email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <!-- password row -->
+          <div class="flex-row-eb">
+            <label class="password" for="password">Password</label>
+            <a href="#" class="forget-password">Forget Password?</a>
+          </div>
+          <div class="frame-3">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              class="input-password"
+              placeholder="••••••••"
+              required
+            />
+          </div>
+
+          <!-- remember-me -->
+          <div class="frame-5">
+            <input type="checkbox" id="remember" class="checkbox" />
+            <label for="remember" class="remember-password">Remember Password</label>
+          </div>
+
+          <!-- submit -->
+          <button type="submit" class="frame-6 sign-in-btn">
+            <span class="sign-in">Login</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

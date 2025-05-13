@@ -1,0 +1,251 @@
+/* Responsive CSS for LoginScreen2 */
+.group {
+  position: absolute;
+  width: 116.11%;
+  height: 157.03%;
+  top: -20.9%;
+  left: -7.36%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/Rda9gBrMNK.png) no-repeat center;
+  background-size: cover; /* Changed from 100% 100% to cover for better scaling */
+  z-index: 0; /* Ensure it stays behind other content */
+}
+/* Base responsive structure */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Default styles enhanced for responsiveness */
+  .main-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Use viewport height instead of fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Tablet styles (768px to 1024px) */
+  @media screen and (max-width: 1024px) {
+    .group {
+      width: 150%; /* Wider to ensure coverage */
+      height: 150%;
+      top: -25%;
+      left: -25%;
+    }
+
+    .main-container {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  
+    .flex-column-faa {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      top: 0;
+      left: 0;
+      margin-bottom: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo {
+      margin: 0 auto 20px;
+    }
+  
+    .frame {
+      width: 100%;
+      margin: 30px 0 0 0;
+      align-items: center;
+    }
+  
+    .login-account {
+      width: 100%;
+      font-size: 36px;
+      line-height: 48px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+  
+    .enter-email {
+      width: 100%;
+      font-size: 18px;
+      text-align: center;
+      height: auto;
+    }
+  
+    .bg {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      top: 0;
+      left: 0;
+      padding: 40px 0;
+      margin: 0 auto;
+    }
+  
+    .login-form {
+      position: relative;
+      transform: none;
+      top: 0;
+      left: 0;
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+  
+    .email-address, 
+    .flex-row-eb,
+    .frame-2,
+    .frame-3,
+    .frame-5,
+    .frame-6 {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  /* Mobile styles (below 768px) */
+  @media screen and (max-width: 767px) {
+    .group {
+      width: 200%; /* Even wider for mobile to ensure full coverage */
+      height: 200%;
+      top: -50%;
+      left: -50%;
+    }
+    
+    .main-container {
+      padding: 20px 15px;
+    }
+  
+    .login-account {
+      font-size: 28px;
+      line-height: 38px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .enter-email {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .bg {
+      border-radius: 16px;
+    }
+  
+    .email-address, 
+    .password, 
+    .forget-password,
+    .remember-password {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    .flex-row-eb {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      gap: 8px;
+    }
+  
+    .forget-password {
+      align-self: flex-end;
+    }
+  
+    .input-email,
+    .input-password {
+      font-size: 16px;
+    }
+  
+    .frame-5 {
+      width: 100%;
+    }
+  
+    .sign-in {
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra small devices (below 480px) */
+  @media screen and (max-width: 480px) {
+    .login-account {
+      font-size: 24px;
+      line-height: 32px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .enter-email {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  
+    .group-1 {
+      /* Scale down logo for very small screens */
+      transform: scale(0.9);
+      transform-origin: center;
+    }
+  
+    .frame-2,
+    .frame-3,
+    .frame-6 {
+      height: 50px;
+    }
+  
+    .frame-5 {
+      margin-top: 15px;
+    }
+  
+    .frame-6 {
+      margin-top: 25px;
+    }
+  }
+  
+  /* Fix form layout on all screen sizes */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-form > * {
+    margin-top: 0 !important;
+  }
+  
+  /* First element in form needs proper spacing from top */
+  .email-address {
+    margin-top: 0 !important;
+  }
+  
+  /* Fix the spacing between elements */
+  .frame-2 {
+    margin-top: 8px;
+  }
+  
+  .flex-row-eb {
+    margin-top: 20px;
+  }
+  
+  .frame-3 {
+    margin-top: 8px;
+  }
+  
+  .frame-5 {
+    margin-top: 20px;
+  }
+  
+  .frame-6 {
+    margin-top: 30px;
+  }

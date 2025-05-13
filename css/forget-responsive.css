@@ -1,0 +1,235 @@
+/* Responsive CSS for Forgot Password Screen */
+
+/* Base responsive structure - only apply to smaller screens */
+@media screen {
+  /* These styles only apply to all screens, but we'll ensure they don't break desktop */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Responsive styling for the decorative blurred background */
+  .group-2 {
+    /* Maintain your original background settings for desktop */
+    position: absolute;
+    width: 116.11%;
+    height: 157.03%;
+    top: -20.9%;
+    left: -7.36%;
+    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-13/bTDsmewFb2.png) no-repeat center;
+    background-size: 100% 100%; /* Keep original setting for desktop */
+    z-index: 0; /* Ensure it stays behind other content */
+  }
+}
+
+/* Fix form layout only on smaller screens */
+@media screen and (max-width: 1024px) {
+  .reset-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Override main container settings only on small screens */
+  .main-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto; /* Override fixed height on smaller screens */
+    flex-direction: column; /* Ensure column layout */
+  }
+  
+  /* Adjust background for tablet */
+  .group-2 {
+    width: 150%; /* Wider to ensure coverage */
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background-size: cover; /* For tablets and below */
+  }
+  
+  .logo {
+    margin: 30px auto 15px; /* Adjust spacing */
+    position: relative;
+    left: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bg {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 40px auto;
+    padding: 40px 0;
+  }
+  
+  .dashboard {
+    margin-top: 40px;
+  }
+  
+  .password-reset-link {
+    width: 90%;
+    margin: 24px auto;
+  }
+  
+  .email-address {
+    margin: 32px auto 0;
+    width: 80%;
+  }
+  
+  .frame {
+    width: 80%;
+    margin: 12px auto 0;
+  }
+  
+  .frame-1 {
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 14px 20px;
+  }
+  
+  .sign-in-link {
+    width: 100%;
+  }
+  
+  .back-to-login-link {
+    margin: 32px auto 0;
+    width: auto;
+  }
+
+  .reset-form {
+    width: 90%; /* Slightly narrower for tablets */
+    margin: 0 auto; /* Center align */
+  }
+}
+
+/* Mobile styles (below 768px) */
+@media screen and (max-width: 767px) {
+  /* Adjust background for mobile */
+  .group-2 {
+    width: 200%; /* Even wider for mobile to ensure full coverage */
+    height: 200%;
+    top: -50%;
+    left: -50%;
+  }
+  
+  .main-container {
+    padding: 20px 15px;
+    flex-direction: column; /* Ensure column layout */
+  }
+  
+  .logo {
+    margin: 20px auto 10px; /* Adjust spacing */
+    width: 200px;
+  }
+  
+  .group {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+  
+  .bg {
+    width: 95%;
+    border-radius: 16px;
+    padding: 30px 0;
+  }
+  
+  .dashboard {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 30px;
+  }
+  
+  .password-reset-link {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px auto;
+    width: 85%;
+  }
+  
+  .email-address {
+    font-size: 16px;
+    line-height: 24px;
+    width: 85%;
+  }
+  
+  .frame {
+    width: 85%;
+    height: 50px;
+  }
+  
+  .example-gmail {
+    font-size: 16px;
+  }
+  
+  .frame-1 {
+    width: 85%;
+    height: 50px;
+    margin: 30px auto 0;
+  }
+  
+  .sign-in-link {
+    font-size: 18px;
+  }
+
+  .reset-form {
+    width: 100%; /* Take full width */
+    margin: 0 auto 20px; /* Add bottom margin */
+  }
+}
+
+/* Extra small devices (below 480px) */
+@media screen and (max-width: 480px) {
+  .logo {
+    margin: 30px auto 0;
+    width: 180px;
+  }
+  
+  .dashboard {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+  
+  .password-reset-link {
+    font-size: 14px;
+    line-height: 21px;
+    width: 90%;
+  }
+  
+  .bg {
+    padding: 20px 0;
+  }
+  
+  .frame, .frame-1 {
+    height: 45px;
+  }
+  
+  .email-address {
+    margin-top: 20px;
+  }
+  
+  .frame-1 {
+    margin-top: 25px;
+  }
+  
+  .back-to-login-link {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
